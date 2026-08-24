@@ -1,7 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-
 // RESET Y BOX MODEL
 
 * {
@@ -9,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 // ESTILOS GENERALES
 
@@ -24,7 +22,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 
 // CONTENIDO PRINCIPAL
 
@@ -80,7 +77,6 @@ main {
     }
 }
 
-
 // SECCIONES
 
 section {
@@ -92,7 +88,6 @@ section {
 
     border-radius: $radio-general;
 }
-
 
 // ARTÍCULOS
 
