@@ -1,0 +1,105 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+// RESET Y BOX MODEL
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// ESTILOS GENERALES
+
+body {
+    min-height: 100vh;
+
+    font-family: $fuente-principal;
+
+    background-color: $color-fondo;
+    color: $color-texto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+// CONTENIDO PRINCIPAL
+
+main {
+    width: 100%;
+    max-width: $ancho-maximo;
+
+    margin: 0 auto;
+    padding: $espacio-20;
+
+    flex: 1;
+
+
+    a:not(.btn) {
+        color: $color-primario;
+
+        font-weight: bold;
+
+        text-decoration: none;
+
+        transition:
+            color 0.3s ease,
+            text-decoration-color 0.3s ease,
+            transform 0.2s ease;
+
+
+        &:hover {
+            color: $color-acento;
+
+            text-decoration: underline;
+        }
+
+
+        &:focus {
+            color: $color-acento;
+
+            @include focus-outline;
+
+            border-radius: $radio-pequeno;
+        }
+
+
+        &:active {
+            color: $color-primario-oscuro;
+        }
+    }
+
+
+    a.btn-portfolio {
+        color: $color-blanco;
+
+        text-decoration: none;
+    }
+}
+
+
+// SECCIONES
+
+section {
+    width: 100%;
+
+    background-color: $color-blanco;
+
+    padding: $espacio-25;
+
+    border-radius: $radio-general;
+}
+
+
+// ARTÍCULOS
+
+article {
+    background-color: $color-superficie-suave;
+
+    padding: $espacio-20;
+
+    border-radius: $radio-articulo;
+}

@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+// TÍTULOS
+
+h1,
+h2,
+h3 {
+    margin-bottom: $espacio-15;
+    color: $color-primario-oscuro;
+}
+
+
+h1 {
+    font-size: $tamano-h1;
+}
+
+
+h4 {
+    color: $color-primario-oscuro;
+}
+
+// PÁRRAFOS
+
+p {
+    line-height: 1.6;
+}
