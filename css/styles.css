@@ -1,0 +1,1563 @@
+/* RESET Y BOX MODEL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ESTILOS GENERALES */
+
+body {
+    min-height: 100vh;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    background-color: #f0fdfa;
+    color: #1f2937;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #0f766e;
+    color: white;
+}
+
+
+/* NAVBAR BOOTSTRAP */
+
+.navbar-portfolio {
+    width: 100%;
+
+    background-color: #0f766e;
+
+    padding: 12px 0;
+}
+
+
+.navbar-portfolio .container {
+    max-width: 1200px;
+}
+
+
+.navbar-portfolio .navbar-brand {
+    color: white;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.navbar-portfolio .nav-link {
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 8px 10px;
+
+    border-radius: 6px;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.navbar-portfolio .nav-link.active {
+    color: #bae6fd;
+
+    font-weight: 700;
+}
+
+
+/* PSEUDOCLASES NAVBAR */
+
+.navbar-portfolio .navbar-brand:hover {
+    color: #bae6fd;
+
+    transform: translateY(-2px);
+}
+
+
+.navbar-portfolio .navbar-brand:focus {
+    color: white;
+
+    outline: 3px solid #0ea5e9;
+    outline-offset: 3px;
+
+    border-radius: 6px;
+}
+
+
+.navbar-portfolio .navbar-brand:active {
+    color: #bae6fd;
+
+    transform: scale(0.96);
+}
+
+
+.navbar-portfolio .nav-link:hover {
+    color: #bae6fd;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transform: translateY(-2px);
+}
+
+
+.navbar-portfolio .nav-link:focus {
+    color: white;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    outline: 3px solid #0ea5e9;
+    outline-offset: 2px;
+}
+
+
+.navbar-portfolio .nav-link:active {
+    color: white;
+
+    background-color: #0ea5e9;
+
+    transform: scale(0.96);
+}
+
+
+/* BOTÓN HAMBURGUESA */
+
+.navbar-portfolio .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.navbar-portfolio .navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+
+    border-color: white;
+}
+
+
+.navbar-portfolio .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.45);
+}
+
+
+.navbar-portfolio .navbar-toggler:active {
+    transform: scale(0.94);
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    flex: 1;
+}
+
+
+/* SECCIONES */
+
+section {
+    width: 100%;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+}
+
+
+/* ARTÍCULOS */
+
+article {
+    background-color: #ccfbf1;
+
+    padding: 20px;
+
+    border-radius: 8px;
+}
+
+
+/* INDEX - GRID MOBILE FIRST */
+
+.inicio-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "presentacion"
+        "sobre-mi"
+        "proyectos"
+        "galeria"
+        "informacion";
+
+    gap: 30px;
+}
+
+
+.inicio-presentacion {
+    grid-area: presentacion;
+}
+
+
+.inicio-sobre-mi {
+    grid-area: sobre-mi;
+}
+
+
+.proyectos-destacados {
+    grid-area: proyectos;
+}
+
+
+.galeria-bootstrap {
+    grid-area: galeria;
+}
+
+
+.informacion-bootstrap {
+    grid-area: informacion;
+}
+
+
+/* PRESENTACIÓN GENERAL */
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 30px;
+}
+
+
+.presentacion>div {
+    flex: 1;
+}
+
+
+.presentacion-imagen {
+    flex: 1;
+
+    margin: 0;
+}
+
+
+.presentacion-imagen img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+
+.presentacion-imagen figcaption {
+    margin-top: 10px;
+
+    font-size: 14px;
+    text-align: center;
+
+    color: #4b5563;
+}
+
+
+.destacado {
+    min-height: 150px;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ccfbf1;
+
+    border-left: 6px solid #0ea5e9;
+    border-radius: 8px;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+    color: #115e59;
+}
+
+
+/* IMÁGENES DE PÁGINAS */
+
+.imagen-pagina {
+    flex: 1;
+
+    margin: 0;
+}
+
+
+.imagen-pagina img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+
+.imagen-pagina figcaption {
+    margin-top: 10px;
+
+    color: #4b5563;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* SECCIÓN SOBRE MÍ */
+
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 20px;
+}
+
+
+.sobre-mi>div {
+    flex: 1;
+
+    padding: 20px;
+}
+
+
+/* PÁGINA SOBRE MÍ - MOBILE FIRST */
+
+.pagina-sobre-mi {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "presentacion"
+        "intereses"
+        "objetivos"
+        "experiencia";
+
+    gap: 30px;
+}
+
+
+.area-sobre-presentacion {
+    grid-area: presentacion;
+}
+
+
+.area-sobre-intereses {
+    grid-area: intereses;
+}
+
+
+.area-sobre-objetivos {
+    grid-area: objetivos;
+}
+
+
+.area-sobre-experiencia {
+    grid-area: experiencia;
+}
+
+
+/* PROYECTOS DEL INDEX */
+
+.proyectos {
+    margin-top: 20px;
+}
+
+
+.proyectos-inicio {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    margin: 20px 0;
+}
+
+
+.proyectos article {
+    min-height: 170px;
+
+    border-top: 4px solid #0ea5e9;
+}
+
+
+/* GALERÍA - CAROUSEL BOOTSTRAP */
+
+.galeria-bootstrap>p {
+    margin-bottom: 25px;
+}
+
+
+.carousel-portfolio {
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(15, 118, 110, 0.18);
+
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.carousel-portfolio:hover {
+    box-shadow: 0 12px 28px rgba(15, 118, 110, 0.28);
+}
+
+
+.carousel-portfolio:focus-within {
+    box-shadow:
+        0 0 0 4px rgba(14, 165, 233, 0.25),
+        0 12px 28px rgba(15, 118, 110, 0.22);
+}
+
+
+.carousel-portfolio:active {
+    transform: scale(0.995);
+}
+
+
+.carousel-portfolio .carousel-item img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+}
+
+
+.carousel-portfolio .carousel-caption {
+    left: 10%;
+    right: 10%;
+    bottom: 25px;
+
+    padding: 15px 20px;
+
+    background-color: rgba(15, 118, 110, 0.82);
+
+    border-radius: 8px;
+}
+
+
+.carousel-portfolio .carousel-caption h3 {
+    margin-bottom: 8px;
+
+    color: white;
+}
+
+
+.carousel-portfolio .carousel-caption p {
+    margin: 0;
+
+    color: white;
+}
+
+
+.carousel-portfolio .carousel-indicators button {
+    width: 35px;
+    height: 4px;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.carousel-portfolio .carousel-indicators button:hover {
+    opacity: 1;
+
+    transform: scaleX(1.15);
+}
+
+
+.carousel-portfolio .carousel-indicators button:focus {
+    outline: 3px solid #0ea5e9;
+    outline-offset: 3px;
+}
+
+
+.carousel-portfolio .carousel-indicators button:active {
+    transform: scaleX(0.9);
+}
+
+
+/* CONTROLES DEL CAROUSEL */
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(14, 165, 233, 0.15);
+}
+
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: 3px solid #0ea5e9;
+    outline-offset: -5px;
+}
+
+
+.carousel-control-prev:active,
+.carousel-control-next:active {
+    transform: scale(0.92);
+}
+
+
+/* ACCORDION BOOTSTRAP */
+
+.informacion-bootstrap>p {
+    margin-bottom: 25px;
+}
+
+
+.accordion-portfolio {
+    --bs-accordion-border-color: #99f6e4;
+    --bs-accordion-active-color: #115e59;
+    --bs-accordion-active-bg: #ccfbf1;
+}
+
+
+.accordion-portfolio .accordion-item {
+    overflow: hidden;
+
+    background-color: white;
+
+    border-color: #99f6e4;
+}
+
+
+.accordion-portfolio .accordion-button {
+    color: #1f2937;
+
+    background-color: white;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: 700;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.accordion-portfolio .accordion-button:not(.collapsed) {
+    color: #115e59;
+
+    background-color: #ccfbf1;
+
+    box-shadow: none;
+}
+
+
+.accordion-portfolio .accordion-button:hover {
+    color: #0f766e;
+
+    background-color: #f0fdfa;
+}
+
+
+.accordion-portfolio .accordion-button:focus {
+    border-color: #0ea5e9;
+
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.25);
+}
+
+
+.accordion-portfolio .accordion-button:active {
+    background-color: #99f6e4;
+
+    transform: scale(0.995);
+}
+
+
+.accordion-portfolio .accordion-body {
+    background-color: #f0fdfa;
+
+    color: #1f2937;
+}
+
+
+.accordion-portfolio .accordion-body p {
+    margin: 0;
+}
+
+
+/* PÁGINA PROYECTOS */
+
+.pagina-proyectos {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "introduccion"
+        "proyectos"
+        "herramientas";
+
+    gap: 30px;
+}
+
+
+.area-introduccion {
+    grid-area: introduccion;
+}
+
+
+.area-proyectos {
+    grid-area: proyectos;
+}
+
+
+.area-herramientas {
+    grid-area: herramientas;
+}
+
+
+/* PRESENTACIÓN PROYECTOS */
+
+.presentacion-proyectos {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 20px;
+}
+
+
+.presentacion-proyectos>div {
+    flex: 1;
+}
+
+
+.imagen-proyectos {
+    flex: 1;
+
+    margin: 0;
+}
+
+
+.imagen-proyectos img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+
+.imagen-proyectos figcaption {
+    margin-top: 10px;
+
+    color: #4b5563;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* CARDS PROYECTOS BOOTSTRAP */
+
+.proyectos-bootstrap>p {
+    margin-bottom: 10px;
+}
+
+
+.card-proyecto-bootstrap {
+    padding: 0;
+
+    background-color: white;
+
+    border: 2px solid #99f6e4;
+    border-top: 4px solid #0ea5e9;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(15, 118, 110, 0.1);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.card-proyecto-bootstrap:hover {
+    border-color: #0ea5e9;
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 24px rgba(15, 118, 110, 0.22);
+}
+
+
+.card-proyecto-bootstrap:focus {
+    border-color: #0ea5e9;
+
+    outline: 3px solid rgba(14, 165, 233, 0.35);
+    outline-offset: 3px;
+
+    transform: translateY(-4px);
+}
+
+
+.card-proyecto-bootstrap:active {
+    transform: translateY(-2px) scale(0.98);
+
+    box-shadow: 0 6px 14px rgba(15, 118, 110, 0.18);
+}
+
+
+.card-proyecto-bootstrap .card-body {
+    padding: 24px;
+}
+
+
+.card-proyecto-bootstrap .card-title {
+    color: #115e59;
+}
+
+
+.card-proyecto-bootstrap .card-text {
+    margin-bottom: 20px;
+
+    color: #1f2937;
+
+    line-height: 1.6;
+}
+
+
+/* BOTONES PERSONALIZADOS */
+
+.btn-portfolio {
+    background-color: #0f766e;
+
+    color: white;
+
+    border: 2px solid #0f766e;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.btn-portfolio:hover {
+    background-color: #0ea5e9;
+
+    border-color: #0ea5e9;
+
+    color: white;
+
+    text-decoration: none;
+
+    transform: translateY(-2px);
+}
+
+
+.btn-portfolio:focus {
+    background-color: #0f766e;
+
+    border-color: #0ea5e9;
+
+    color: white;
+
+    text-decoration: none;
+
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.3);
+}
+
+
+.btn-portfolio:active {
+    background-color: #115e59;
+
+    border-color: #115e59;
+
+    color: white;
+
+    text-decoration: none;
+
+    transform: scale(0.96);
+}
+
+
+/* BOTONES SECUNDARIOS */
+
+.btn-secondary {
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
+
+
+.btn-secondary:focus {
+    box-shadow: 0 0 0 4px rgba(107, 114, 128, 0.25);
+}
+
+
+.btn-secondary:active {
+    transform: scale(0.96);
+}
+
+
+/* BOTÓN CERRAR MODAL */
+
+.btn-close {
+    transition:
+        opacity 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.btn-close:hover {
+    opacity: 0.7;
+
+    transform: rotate(8deg);
+}
+
+
+.btn-close:focus {
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.25);
+}
+
+
+.btn-close:active {
+    transform: scale(0.9);
+}
+
+
+/* MODALS */
+
+.modal-portfolio {
+    overflow: hidden;
+
+    border: 2px solid #99f6e4;
+
+    border-radius: 10px;
+}
+
+
+.modal-portfolio .modal-header {
+    background-color: #f0fdfa;
+
+    border-bottom-color: #99f6e4;
+}
+
+
+.modal-portfolio .modal-title {
+    margin: 0;
+
+    color: #115e59;
+
+    font-weight: 700;
+}
+
+
+.modal-portfolio .modal-body {
+    color: #1f2937;
+}
+
+
+.modal-portfolio .modal-body p {
+    margin: 0;
+}
+
+
+.modal-portfolio .modal-footer {
+    background-color: #f8fffe;
+
+    border-top-color: #99f6e4;
+}
+
+
+/* HERRAMIENTAS */
+
+.herramientas-contenedor {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+.herramientas-contenedor article {
+    border-left: 5px solid #0ea5e9;
+}
+
+
+/* PÁGINA SERVICIOS */
+
+.pagina-servicios {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "presentacion"
+        "servicios"
+        "metodologia"
+        "contacto";
+
+    gap: 30px;
+}
+
+
+.area-servicios-presentacion {
+    grid-area: presentacion;
+}
+
+
+.area-servicios-listado {
+    grid-area: servicios;
+}
+
+
+.area-servicios-metodologia {
+    grid-area: metodologia;
+}
+
+
+.area-servicios-contacto {
+    grid-area: contacto;
+}
+
+
+/* CARDS SERVICIOS BOOTSTRAP */
+
+.card-servicio-bootstrap {
+    padding: 0;
+
+    background-color: white;
+
+    border: 2px solid #99f6e4;
+    border-top: 4px solid #0f766e;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(15, 118, 110, 0.1);
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.card-servicio-bootstrap:hover {
+    border-color: #0ea5e9;
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 24px rgba(15, 118, 110, 0.2);
+}
+
+
+.card-servicio-bootstrap:focus {
+    border-color: #0ea5e9;
+
+    outline: 3px solid rgba(14, 165, 233, 0.35);
+    outline-offset: 3px;
+
+    transform: translateY(-4px);
+}
+
+
+.card-servicio-bootstrap:active {
+    transform: translateY(-2px) scale(0.98);
+}
+
+
+.card-servicio-bootstrap .card-body {
+    padding: 24px;
+}
+
+
+.card-servicio-bootstrap .card-title {
+    color: #115e59;
+}
+
+
+.card-servicio-bootstrap .card-text {
+    margin-bottom: 20px;
+
+    color: #1f2937;
+
+    line-height: 1.6;
+}
+
+
+/* METODOLOGÍA */
+
+.metodologia-contenedor {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+.metodologia-contenedor article {
+    border-left: 5px solid #0ea5e9;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.metodologia-contenedor article:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 6px 14px rgba(15, 118, 110, 0.14);
+}
+
+
+/* PÁGINA CONTACTO */
+
+.pagina-contacto {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "presentacion"
+        "contenido"
+        "final";
+
+    gap: 30px;
+}
+
+
+.area-contacto-presentacion {
+    grid-area: presentacion;
+}
+
+
+.area-contacto-contenido {
+    grid-area: contenido;
+}
+
+
+.area-contacto-final {
+    grid-area: final;
+}
+
+
+/* INFORMACIÓN DE CONTACTO */
+
+.contacto-info {
+    background-color: #ccfbf1;
+
+    border-left: 5px solid #0ea5e9;
+
+    padding: 25px;
+
+    border-radius: 10px;
+}
+
+
+.contacto-dato {
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 1px solid #99f6e4;
+}
+
+
+.contacto-dato:first-of-type {
+    margin-top: 15px;
+}
+
+
+.contacto-dato h4 {
+    margin-bottom: 10px;
+
+    color: #115e59;
+
+    font-size: 19px;
+}
+
+
+/* FORMULARIO DE CONTACTO */
+
+.contacto-formulario {
+    background-color: white;
+
+    border: 2px solid #99f6e4;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(15, 118, 110, 0.08);
+}
+
+
+.form-label {
+    color: #115e59;
+
+    font-weight: 700;
+}
+
+
+.form-control {
+    border: 2px solid #d1fae5;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+
+.form-control:hover {
+    border-color: #99f6e4;
+}
+
+
+.form-control:focus {
+    border-color: #0ea5e9;
+
+    background-color: #f8fffe;
+
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.18);
+}
+
+
+textarea.form-control {
+    resize: vertical;
+}
+
+
+/* TEXTOS */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 15px;
+
+    color: #115e59;
+}
+
+
+h1 {
+    font-size: 32px;
+}
+
+
+h4 {
+    color: #115e59;
+}
+
+
+p {
+    line-height: 1.6;
+}
+
+
+/* ENLACES DEL CONTENIDO */
+
+main a:not(.btn) {
+    color: #0f766e;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        text-decoration-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+main a:not(.btn):hover {
+    color: #0ea5e9;
+
+    text-decoration: underline;
+}
+
+
+main a:not(.btn):focus {
+    color: #0ea5e9;
+
+    outline: 3px solid #0ea5e9;
+    outline-offset: 3px;
+
+    border-radius: 3px;
+}
+
+
+main a:not(.btn):active {
+    color: #115e59;
+}
+
+
+main a.btn-portfolio {
+    color: white;
+
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+
+    background-color: #115e59;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+footer p {
+    margin-bottom: 10px;
+}
+
+
+footer a {
+    display: inline-block;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+footer a:hover {
+    color: #bae6fd;
+
+    transform: translateY(-2px);
+}
+
+
+footer a:focus {
+    color: white;
+
+    outline: 3px solid #0ea5e9;
+    outline-offset: 3px;
+
+    border-radius: 3px;
+}
+
+
+footer a:active {
+    color: #99f6e4;
+
+    transform: scale(0.96);
+}
+
+
+/* TABLET - 768px */
+
+@media (min-width: 768px) {
+
+    main {
+        padding: 25px;
+    }
+
+
+    /* INDEX */
+
+    .proyectos-inicio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* SOBRE MÍ */
+
+    .pagina-sobre-mi {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "presentacion presentacion"
+            "intereses objetivos"
+            "experiencia experiencia";
+    }
+
+
+    /* HERRAMIENTAS */
+
+    .herramientas-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* METODOLOGÍA */
+
+    .metodologia-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* DESKTOP - 1024px */
+
+@media (min-width: 1024px) {
+
+    main {
+        padding: 30px;
+    }
+
+
+    /* INDEX */
+
+    .inicio-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "presentacion presentacion"
+            "sobre-mi proyectos"
+            "galeria galeria"
+            "informacion informacion";
+
+        gap: 30px;
+    }
+
+
+    .presentacion {
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .proyectos-inicio {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
+    }
+
+
+    /* SOBRE MÍ */
+
+    .pagina-sobre-mi {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "presentacion presentacion"
+            "intereses objetivos"
+            "experiencia experiencia";
+
+        gap: 30px;
+    }
+
+
+    .pagina-sobre-mi .sobre-mi {
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+
+    /* PROYECTOS */
+
+    .pagina-proyectos {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "introduccion introduccion"
+            "proyectos proyectos"
+            "herramientas herramientas";
+
+        gap: 30px;
+    }
+
+
+    .presentacion-proyectos {
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+
+    .herramientas-contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* SERVICIOS */
+
+    .pagina-servicios {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "presentacion presentacion"
+            "servicios servicios"
+            "metodologia metodologia"
+            "contacto contacto";
+    }
+
+
+    .pagina-servicios .sobre-mi {
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+
+    .metodologia-contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* CONTACTO */
+
+    .pagina-contacto {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "presentacion presentacion"
+            "contenido contenido"
+            "final final";
+    }
+
+
+    .pagina-contacto .sobre-mi {
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 30px;
+    }
+
+}
+
+
+/* NAVBAR MOBILE / TABLET */
+
+@media (max-width: 991.98px) {
+
+    .navbar-portfolio .navbar-nav {
+        padding-top: 15px;
+
+        gap: 4px;
+    }
+
+
+    .navbar-portfolio .nav-link {
+        padding: 10px;
+    }
+
+}
+
+
+/* MOBILE - CAROUSEL */
+
+@media (max-width: 576px) {
+
+    .carousel-portfolio .carousel-caption {
+        left: 8%;
+        right: 8%;
+        bottom: 15px;
+
+        padding: 10px;
+    }
+
+
+    .carousel-portfolio .carousel-caption h3 {
+        margin-bottom: 0;
+
+        font-size: 18px;
+    }
+
+
+    .carousel-portfolio .carousel-caption p {
+        display: none;
+    }
+
+}

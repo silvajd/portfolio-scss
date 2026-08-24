@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Mi Portafolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-portfolio">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="../index.html">
+                    Mi Portafolio
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPortfolio"
+                    aria-controls="navbarPortfolio" aria-expanded="false" aria-label="Abrir menú de navegación">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarPortfolio">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="../index.html">
+                                Inicio
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="./sobre-mi.html">
+                                Sobre mí
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="./proyectos.html">
+                                Proyectos
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="./servicios.html">
+                                Servicios
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">
+                                Contacto
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-contacto">
+
+        <!-- PRESENTACIÓN -->
+
+        <section class="sobre-mi area-contacto-presentacion">
+
+            <div>
+
+                <h1>Contacto</h1>
+
+                <p>
+                    Si querés comunicarte conmigo, realizar una consulta o
+                    conocer más sobre mis proyectos, podés hacerlo mediante
+                    los siguientes medios.
+                </p>
+
+                <p>
+                    También podés completar el formulario para practicar la
+                    implementación de componentes de Bootstrap dentro del
+                    portafolio.
+                </p>
+
+            </div>
+
+            <figure class="imagen-pagina">
+
+                <img src="../img/imagen-contacto.jpg" alt="Imagen representativa de comunicación y contacto digital">
+
+                <figcaption>
+                    Canales disponibles para contactarme.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <!-- CONTENIDO DE CONTACTO -->
+
+        <section class="area-contacto-contenido">
+
+            <h2>Medios de contacto</h2>
+
+            <p>
+                Podés comunicarte conmigo a través del correo electrónico o
+                visitar mi perfil de GitHub.
+            </p>
+
+            <div class="row g-4 mt-2">
+
+                <!-- INFORMACIÓN -->
+
+                <div class="col-12 col-lg-5">
+
+                    <article class="contacto-info h-100">
+
+                        <h3>Información</h3>
+
+                        <div class="contacto-dato">
+
+                            <h4>Correo electrónico</h4>
+
+                            <p>
+                                Podés utilizar el correo para enviarme
+                                consultas o mensajes.
+                            </p>
+
+                            <a class="btn btn-portfolio" href="mailto:josefinasilva@example.com">
+                                Enviar correo
+                            </a>
+
+                        </div>
+
+
+                        <div class="contacto-dato">
+
+                            <h4>GitHub</h4>
+
+                            <p>
+                                En mi perfil de GitHub podés consultar algunos
+                                de los repositorios desarrollados durante mi
+                                aprendizaje.
+                            </p>
+
+                            <a class="btn btn-portfolio" href="https://github.com/silvajd" target="_blank"
+                                rel="noopener noreferrer">
+                                Visitar GitHub
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+
+                <div class="col-12 col-lg-7">
+
+                    <article class="contacto-formulario h-100">
+
+                        <h3>Enviame una consulta</h3>
+
+                        <p>
+                            Completá los siguientes campos para simular el
+                            envío de una consulta.
+                        </p>
+
+                        <form action="#" method="get">
+
+                            <!-- NOMBRE -->
+
+                            <div class="mb-3">
+
+                                <label for="nombre" class="form-label">
+                                    Nombre
+                                </label>
+
+                                <input type="text" class="form-control" id="nombre" name="nombre"
+                                    placeholder="Ingresá tu nombre" required>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="mb-3">
+
+                                <label for="email" class="form-label">
+                                    Correo electrónico
+                                </label>
+
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="nombre@ejemplo.com" required>
+
+                            </div>
+
+
+                            <!-- ASUNTO -->
+
+                            <div class="mb-3">
+
+                                <label for="asunto" class="form-label">
+                                    Asunto
+                                </label>
+
+                                <input type="text" class="form-control" id="asunto" name="asunto"
+                                    placeholder="Motivo de la consulta" required>
+
+                            </div>
+
+
+                            <!-- MENSAJE -->
+
+                            <div class="mb-3">
+
+                                <label for="mensaje" class="form-label">
+                                    Mensaje
+                                </label>
+
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                                    placeholder="Escribí tu consulta" required></textarea>
+
+                            </div>
+
+
+                            <!-- BOTÓN -->
+
+                            <button class="btn btn-portfolio" type="submit">
+                                Enviar consulta
+                            </button>
+
+                        </form>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DISPONIBILIDAD -->
+
+        <section class="area-contacto-final">
+
+            <h2>¿Dónde ver mis proyectos?</h2>
+
+            <p>
+                También podés ingresar a la sección de proyectos para conocer
+                las distintas etapas de desarrollo de este portafolio y acceder
+                a los repositorios correspondientes.
+            </p>
+
+            <a class="btn btn-portfolio" href="./proyectos.html">
+                Ver proyectos
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Mi Portafolio. Todos los derechos reservados.
+        </p>
+
+        <div>
+
+            <a href="https://github.com/silvajd" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
